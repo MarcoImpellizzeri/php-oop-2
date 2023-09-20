@@ -5,14 +5,12 @@ require_once __DIR__ . '/array_giochi.php';
 require_once __DIR__ . '/array_cuccie.php';
 
 $all_cibi = populateCibi();
-var_dump($all_cibi);
 
 $all_giochi = populateGiochi();
-var_dump($all_giochi);
 
-$all_cuccie = populateCuccie();
-var_dump($all_cuccie);
+$all_cucce = populateCuccie();
 
+var_dump($all_cibi, $all_giochi, $all_cucce)
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +44,9 @@ var_dump($all_cuccie);
         ed il tipo di articolo che si sta visualizzando (prodotto, cibo, gioco, cuccia). 
     -->
     <div class="container py-5">
+        <h1 class="text-center">ANIMAL LOVER</h1>
         <div class="container py-5">
+            <h2>CIBO</h2>
             <div class="row row-cols-4">
                 <?php foreach ($all_cibi as $cibo) { ?>
                     <div class="col">
@@ -55,13 +55,21 @@ var_dump($all_cuccie);
                             <div class="card-body">
                                 <h2 class="card-title"><?php echo $cibo->getName(); ?></h2>
                                 <p class="card-text">Prezzo: <?php echo $cibo->getPrice(); ?></p>
-                                <p class="card-text">Categoria: Cibo</p>
+                                <p class="card-text">Tipo prodotto: <?php echo $cibo->getTypeProd(); ?></p>
+                                <p class="card-text text-center">
+                                    <?php if ($cibo->getSpecies() === 'cane') { ?>
+                                        <i class="fa-solid fa-dog"></i>
+                                    <?php } elseif ($cibo->getSpecies() === 'gatto') {?>
+                                        <i class="fa-solid fa-cat"></i>
+                                    <?php }?>
+                                </p>
                             </div>
                         </div>
                     </div>
                 <?php } ?>
             </div>
-            
+
+            <h2>GIOCHI</h2>
             <div class="row row-cols-4">
                 <?php foreach ($all_giochi as $gioco) { ?>
                     <div class="col">
@@ -70,22 +78,37 @@ var_dump($all_cuccie);
                             <div class="card-body">
                                 <h2 class="card-title"><?php echo $gioco->getName(); ?></h2>
                                 <p class="card-text">Prezzo: <?php echo $gioco->getPrice(); ?></p>
-                                <p class="card-text">Categoria: gioco</p>
+                                <p class="card-text">Tipo prodotto: <?php echo $gioco->getTypeProd(); ?></p>
+                                <p class="card-text text-center">
+                                    <?php if ($gioco->getSpecies() === 'cane') { ?>
+                                        <i class="fa-solid fa-dog"></i>
+                                    <?php } elseif ($gioco->getSpecies() === 'gatto') {?>
+                                        <i class="fa-solid fa-cat"></i>
+                                    <?php }?>
+                                </p>
                             </div>
                         </div>
                     </div>
                 <?php } ?>
             </div>
 
+            <h2>CUCCE</h2>
             <div class="row row-cols-4">
-                <?php foreach ($all_cuccie as $cuccia) { ?>
+                <?php foreach ($all_cucce as $cuccia) { ?>
                     <div class="col">
                         <div class="card">
                             <img src="<?php echo $cuccia->getImageProd(); ?>" class="card-img-top" alt="Immagine prodotto">
                             <div class="card-body">
                                 <h2 class="card-title"><?php echo $cuccia->getName(); ?></h2>
                                 <p class="card-text">Prezzo: <?php echo $cuccia->getPrice(); ?></p>
-                                <p class="card-text">Categoria: cuccia</p>
+                                <p class="card-text">Tipo prodotto: <?php echo $cuccia->getTypeProd(); ?></p>
+                                <p class="card-text text-center">
+                                    <?php if ($cuccia->getSpecies() === 'cane') { ?>
+                                        <i class="fa-solid fa-dog"></i>
+                                    <?php } elseif ($cuccia->getSpecies() === 'gatto') {?>
+                                        <i class="fa-solid fa-cat"></i>
+                                    <?php }?>
+                                </p>
                             </div>
                         </div>
                     </div>

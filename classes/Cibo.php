@@ -5,6 +5,7 @@ class Cibo extends Prodotto {
     protected $name;
     protected $image_prod;
     protected $price;
+    protected $species;
 
     /**
      * Get the value of price
@@ -51,10 +52,29 @@ class Cibo extends Prodotto {
         return $this;
     }
 
-    function _construct($_name, $_image_prod, $_price) {
+    /**
+     * Get the value of species
+     */
+    public function getSpecies() {
+        return $this->species;
+    }
+
+    /**
+     * Set the value of species
+     */
+    public function setSpecies($species) {
+        if (in_array($species, ['cane', 'gatto'])) {
+            $this->species = $species;
+            return true;
+        }
+        return false;
+    }
+
+    function _construct($_name, $_image_prod, $_price, $_species) {
         $this->name = $_name;
         $this->image_prod = $_image_prod;
         $this->price = $_price;
+        $this->species = $_species;
     }
 }
 

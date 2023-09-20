@@ -13,6 +13,10 @@ function populateCibi()
     $ultima_salmon->getImageProd();
     $ultima_salmon->setPrice('33.00 $');
     $ultima_salmon->getPrice();
+    $ultima_salmon->setTypeProd('Cibo');
+    $ultima_salmon->getTypeProd();
+    $ultima_salmon->setSpecies('cane');
+    $ultima_salmon->getSpecies();
     $cibi[] = $ultima_salmon;
 
     $special_dog = new Cibo();
@@ -22,6 +26,10 @@ function populateCibi()
     $special_dog->getImageProd();
     $special_dog->setPrice('45.00 $');
     $special_dog->getPrice();
+    $special_dog->setTypeProd('Cibo');
+    $special_dog->getTypeProd();
+    $special_dog->setSpecies('cane');
+    $special_dog->getSpecies();
     $cibi[] = $special_dog;
 
     $crancy = new Cibo();
@@ -31,6 +39,10 @@ function populateCibi()
     $crancy->getImageProd();
     $crancy->setPrice('40.00 $');
     $crancy->getPrice();
+    $crancy->setTypeProd('Cibo');
+    $crancy->getTypeProd();
+    $crancy->setSpecies('gatto');
+    $crancy->getSpecies();
     $cibi[] = $crancy;
 
     $premiere = new Cibo();
@@ -40,6 +52,10 @@ function populateCibi()
     $premiere->getImageProd();
     $premiere->setPrice('06.00 $');
     $premiere->getPrice();
+    $premiere->setTypeProd('Cibo');
+    $premiere->getTypeProd();
+    $premiere->setSpecies('gatto');
+    $premiere->getSpecies();
     $cibi[] = $premiere;
 
     return $cibi;

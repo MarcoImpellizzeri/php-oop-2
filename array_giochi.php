@@ -13,6 +13,10 @@ function populateGiochi()
     $nerf_dog->getImageProd();
     $nerf_dog->setPrice('20.00 $');
     $nerf_dog->getPrice();
+    $nerf_dog->setTypeProd('Gioco');
+    $nerf_dog->getTypeProd();
+    $nerf_dog->setSpecies('cane');
+    $nerf_dog->getSpecies();
     $giochi[] = $nerf_dog;
 
     $kong_dog = new Gioco();
@@ -22,6 +26,10 @@ function populateGiochi()
     $kong_dog->getImageProd();
     $kong_dog->setPrice('10.00 $');
     $kong_dog->getPrice();
+    $kong_dog->setTypeProd('Gioco');
+    $kong_dog->getTypeProd();
+    $kong_dog->setSpecies('cane');
+    $kong_dog->getSpecies();
     $giochi[] = $kong_dog;
 
     $camon = new Gioco();
@@ -31,6 +39,10 @@ function populateGiochi()
     $camon->getImageProd();
     $camon->setPrice('40.00 $');
     $camon->getPrice();
+    $camon->setTypeProd('Gioco');
+    $camon->getTypeProd();
+    $camon->setSpecies('gatto');
+    $camon->getSpecies();
     $giochi[] = $camon;
 
     $kong_cat = new Gioco();
@@ -40,6 +52,10 @@ function populateGiochi()
     $kong_cat->getImageProd();
     $kong_cat->setPrice('15.00 $');
     $kong_cat->getPrice();
+    $kong_cat->setTypeProd('Gioco');
+    $kong_cat->getTypeProd();
+    $kong_cat->setSpecies('gatto');
+    $kong_cat->getSpecies();
     $giochi[] = $kong_cat;
 
     return $giochi;
