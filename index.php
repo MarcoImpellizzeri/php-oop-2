@@ -9,8 +9,6 @@ $all_cibi = populateCibi();
 $all_giochi = populateGiochi();
 
 $all_cucce = populateCuccie();
-
-var_dump($all_cibi, $all_giochi, $all_cucce)
 ?>
 
 <!DOCTYPE html>
