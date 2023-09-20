@@ -1,7 +1,7 @@
 <?php 
 require_once __DIR__ . '/Prodotto.php';
 
-class Cibo {
+class Cibo extends Prodotto {
     protected $name;
     protected $image_prod;
     protected $price;
@@ -57,4 +57,6 @@ class Cibo {
         $this->price = $_price;
     }
 }
+
+
 ?>

@@ -1,7 +1,7 @@
 <?php 
-require_once __DIR__ . 'Prodotto.php';
+require_once __DIR__ . '/Prodotto.php';
 
-class Cuccia {
+class Cuccia extends Prodotto {
     protected $name;
     protected $image_prod;
     protected $price;

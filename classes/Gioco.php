@@ -1,7 +1,7 @@
 <?php 
 require_once __DIR__ . '/Prodotto.php';
 
-class Gioco {
+class Gioco extends Prodotto {
     protected $name;
     protected $image_prod;
     protected $price;
