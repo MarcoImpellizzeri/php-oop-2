@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/classes/Prodotto.php';
-require_once __DIR__ . '/classes/Gioco.php';
+require_once __DIR__ . '/../classes/Prodotto.php';
+require_once __DIR__ . '/../classes/Gioco.php';
 
 function populateGiochi()
 {

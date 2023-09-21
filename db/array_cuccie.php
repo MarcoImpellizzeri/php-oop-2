@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/classes/Prodotto.php';
-require_once __DIR__ . '/classes/Cuccia.php';
+require_once __DIR__ . '/../classes/Prodotto.php';
+require_once __DIR__ . '/../classes/Cuccia.php';
 
 function populateCuccie()
 {

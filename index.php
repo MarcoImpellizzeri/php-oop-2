@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/classes/Prodotto.php';
-require_once __DIR__ . '/array_cibi.php';
-require_once __DIR__ . '/array_giochi.php';
-require_once __DIR__ . '/array_cuccie.php';
+require_once __DIR__ . '/db/array_cibi.php';
+require_once __DIR__ . '/db/array_giochi.php';
+require_once __DIR__ . '/db/array_cuccie.php';
 
 $all_cibi = populateCibi();
 

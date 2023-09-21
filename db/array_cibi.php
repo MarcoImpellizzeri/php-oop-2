@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/classes/Prodotto.php';
-require_once __DIR__ . '/classes/Cibo.php';
+require_once __DIR__ . '/../classes/Prodotto.php';
+require_once __DIR__ . '/../classes/Cibo.php';
 
 function populateCibi()
 {
