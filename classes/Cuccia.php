@@ -17,7 +17,11 @@ class Cuccia extends Prodotto {
     /**
      * Set the value of price
      */
-    public function setPrice($price): self {
+    public function setPrice($price)
+    {
+        if (!is_numeric($price)) {
+            throw new Exception('prezzo non valido');
+        }
         $this->price = $price;
         return $this;
     }
@@ -74,7 +78,3 @@ class Cuccia extends Prodotto {
         $this->species = $_species;
     }
 }
-
-
-
-?>

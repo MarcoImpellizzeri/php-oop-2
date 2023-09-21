@@ -5,12 +5,8 @@ require_once __DIR__ . '/db/array_giochi.php';
 require_once __DIR__ . '/db/array_cuccie.php';
 
 $all_cibi = populateCibi();
-
 $all_giochi = populateGiochi();
-
 $all_cucce = populateCuccie();
-
-var_dump($all_cibi);
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +46,7 @@ var_dump($all_cibi);
             <div class="row row-cols-4">
                 <?php foreach ($all_cibi as $cibo) { ?>
                     <div class="col">
-                        <div class="card">
+                        <a href="#0" class="card">
                             <img src="<?php echo $cibo->getImageProd(); ?>" class="card-img-top" alt="Immagine prodotto">
                             <div class="card-body">
                                 <h2 class="card-title"><?php echo $cibo->getName(); ?></h2>
@@ -60,12 +56,12 @@ var_dump($all_cibi);
                                 <p class="card-text text-center">
                                     <?php if ($cibo->getSpecies() === 'cane') { ?>
                                         <i class="fa-solid fa-dog"></i>
-                                    <?php } elseif ($cibo->getSpecies() === 'gatto') {?>
+                                    <?php } elseif ($cibo->getSpecies() === 'gatto') { ?>
                                         <i class="fa-solid fa-cat"></i>
-                                    <?php }?>
+                                    <?php } ?>
                                 </p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 <?php } ?>
             </div>
@@ -74,7 +70,7 @@ var_dump($all_cibi);
             <div class="row row-cols-4">
                 <?php foreach ($all_giochi as $gioco) { ?>
                     <div class="col">
-                        <div class="card">
+                        <a href="#0" class="card">
                             <img src="<?php echo $gioco->getImageProd(); ?>" class="card-img-top" alt="Immagine prodotto">
                             <div class="card-body">
                                 <h2 class="card-title"><?php echo $gioco->getName(); ?></h2>
@@ -83,12 +79,12 @@ var_dump($all_cibi);
                                 <p class="card-text text-center">
                                     <?php if ($gioco->getSpecies() === 'cane') { ?>
                                         <i class="fa-solid fa-dog"></i>
-                                    <?php } elseif ($gioco->getSpecies() === 'gatto') {?>
+                                    <?php } elseif ($gioco->getSpecies() === 'gatto') { ?>
                                         <i class="fa-solid fa-cat"></i>
-                                    <?php }?>
+                                    <?php } ?>
                                 </p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 <?php } ?>
             </div>
@@ -97,7 +93,7 @@ var_dump($all_cibi);
             <div class="row row-cols-4">
                 <?php foreach ($all_cucce as $cuccia) { ?>
                     <div class="col">
-                        <div class="card">
+                        <a href="#0" class="card">
                             <img src="<?php echo $cuccia->getImageProd(); ?>" class="card-img-top" alt="Immagine prodotto">
                             <div class="card-body">
                                 <h2 class="card-title"><?php echo $cuccia->getName(); ?></h2>
@@ -106,12 +102,12 @@ var_dump($all_cibi);
                                 <p class="card-text text-center">
                                     <?php if ($cuccia->getSpecies() === 'cane') { ?>
                                         <i class="fa-solid fa-dog"></i>
-                                    <?php } elseif ($cuccia->getSpecies() === 'gatto') {?>
+                                    <?php } elseif ($cuccia->getSpecies() === 'gatto') { ?>
                                         <i class="fa-solid fa-cat"></i>
-                                    <?php }?>
+                                    <?php } ?>
                                 </p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 <?php } ?>
             </div>
