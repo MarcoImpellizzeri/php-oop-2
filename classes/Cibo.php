@@ -1,7 +1,11 @@
 <?php 
 require_once __DIR__ . '/Prodotto.php';
+require_once __DIR__ . '/../traits/WithPosition.php';
 
 class Cibo extends Prodotto {
+
+    use WithPosition;
+
     protected $name;
     protected $image_prod;
     protected $price;

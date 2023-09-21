@@ -9,6 +9,8 @@ $all_cibi = populateCibi();
 $all_giochi = populateGiochi();
 
 $all_cucce = populateCuccie();
+
+var_dump($all_cibi);
 ?>
 
 <!DOCTYPE html>
@@ -54,6 +56,7 @@ $all_cucce = populateCuccie();
                                 <h2 class="card-title"><?php echo $cibo->getName(); ?></h2>
                                 <p class="card-text">Prezzo: <?php echo $cibo->getPrice(); ?></p>
                                 <p class="card-text">Tipo prodotto: <?php echo $cibo->getTypeProd(); ?></p>
+                                <p class="card-text">Posizione: <?php echo $cibo->getPosition(); ?></p>
                                 <p class="card-text text-center">
                                     <?php if ($cibo->getSpecies() === 'cane') { ?>
                                         <i class="fa-solid fa-dog"></i>

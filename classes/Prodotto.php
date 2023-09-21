@@ -1,5 +1,4 @@
 <?php 
-
 class Prodotto {
     protected $categories;
     protected $type_prod;

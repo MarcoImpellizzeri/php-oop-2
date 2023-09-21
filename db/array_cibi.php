@@ -17,6 +17,8 @@ function populateCibi()
     $ultima_salmon->getTypeProd();
     $ultima_salmon->setSpecies('cane');
     $ultima_salmon->getSpecies();
+    $ultima_salmon->setPosition('Magazzino nord');
+    $ultima_salmon->getPosition();
     $cibi[] = $ultima_salmon;
 
     $special_dog = new Cibo();
@@ -30,6 +32,8 @@ function populateCibi()
     $special_dog->getTypeProd();
     $special_dog->setSpecies('cane');
     $special_dog->getSpecies();
+    $special_dog->setPosition('Magazzino nord');
+    $special_dog->getPosition();
     $cibi[] = $special_dog;
 
     $crancy = new Cibo();
@@ -43,6 +47,8 @@ function populateCibi()
     $crancy->getTypeProd();
     $crancy->setSpecies('gatto');
     $crancy->getSpecies();
+    $crancy->setPosition('Magazzino sud');
+    $crancy->getPosition();
     $cibi[] = $crancy;
 
     $premiere = new Cibo();
@@ -56,6 +62,8 @@ function populateCibi()
     $premiere->getTypeProd();
     $premiere->setSpecies('gatto');
     $premiere->getSpecies();
+    $premiere->setPosition('Magazzino sud');
+    $premiere->getPosition();
     $cibi[] = $premiere;
 
     return $cibi;
